@@ -1,0 +1,62 @@
+[
+  {
+    "ItemCode": "1",
+    "Description": "Beans",
+    "Price": "65",
+    "PriceUnit": "p",
+     "Size": "per can",
+    "DiscountPercentage": "",
+    "FurtherDiscount": [
+      {
+        "OnItemPurchased": "2",
+        "DiscountedItemCode": "2",
+        "DiscountPercentage": "50"
+      }
+    ]
+  },
+  {
+    "ItemCode": "2",
+    "Description": "Bread",
+    "Price": "80",
+    "PriceUnit": "p",
+    "Size": "per loaf",
+    "DiscountPercentage": "",
+    "FurtherDiscount": [
+      {
+        "OnItemPurchased": "",
+        "DiscountedItemCode": "",
+        "DiscountPercentage": ""
+      }
+    ]
+  },
+  {
+    "ItemCode": "3",
+    "Description": "Milk",
+    "Price": "1.30",
+    "PriceUnit": "\u00A3",
+    "Size": "per bottle",
+    "DiscountPercentage": "",
+    "FurtherDiscount": [
+      {
+        "OnItemPurchased": "",
+        "DiscountedItemCode": "",
+        "DiscountPercentage": ""
+      }
+    ]
+  },
+  {
+    "ItemCode": "4",
+    "Description": "Apples",
+    "Price": "1",
+    "PriceUnit": "\u00A3",
+    "Size": "per bag",
+    "DiscountPercentage": "10",
+    "FurtherDiscount": [
+      {
+        "OnItemPurchased": "",
+        "DiscountedItemCode": "",
+        "DiscountPercentage": ""
+      }
+    ]
+  }
+]
