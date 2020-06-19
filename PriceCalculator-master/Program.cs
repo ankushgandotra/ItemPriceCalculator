@@ -35,15 +35,16 @@ namespace PriceCalculator
                 Console.WriteLine("Item Name: {0}- {1}{2} {3} ", item.Description, item.Price,item.PriceUnit, item.Size);
 
             }
-            Console.WriteLine("Please enter the quantity of each item you would like to buy following by space. Enter 0 for item not needed. \n");
+            Console.WriteLine("Please input the quantity of each item you would like to buy following by space, and press Enter Key. Input 0 for item not needed. \n");
             Console.Write("Items- ");
 
             string[] quantities = Console.ReadLine().Trim().Split(' ');
             
             if (quantities.Count() == 0)
             {
-                Console.WriteLine("Values entered for item quantity is not correct. Please enter again ");
-                Console.Write("Items- ");
+                Console.WriteLine("Values entered for item quantity is not correct. Please enter again.\n");
+                //Console.Write("Items- ");
+                ShowForm();
             }
 
             // chec if input is valid and calculate total price
@@ -79,8 +80,9 @@ namespace PriceCalculator
             // if input is not valid, ask user to enter again
             else 
             {
-                Console.WriteLine("Values entered for item quantity is not correct. Please enter again ");
-                Console.Write("Items- ");
+                Console.WriteLine("Values entered for item quantity is not correct. Please enter again.\n");
+                //Console.Write("Items- ");
+                ShowForm();
             }
             ConsoleKey readKey = Console.ReadKey().Key;
             if (readKey == ConsoleKey.Escape)
